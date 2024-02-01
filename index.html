@@ -1,0 +1,3243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon | Clone - Home</title>
+    <link rel="icon" href="images/A-logo.png">
+    <link rel="stylesheet" href="styles/index-amazon-header.css">
+    <link rel="stylesheet" href="styles/index-amazon.css">
+</head>
+
+<body>
+
+<!--Header-->
+
+<div class="header-flex">
+
+    <div class="header-left-div">
+        <a href="index.html"><button class="amazon-logo-btn"><img class="amazon-img" src="images/amazon-logo.png"></button></a>
+    </div>
+
+    <div class="header-input-div">
+        <input class="input-textbox" placeholder="Amazon Search" id="searchInput" onkeydown="if (event.key === 'Enter') { searchProducts(); }">
+        <button class="search-btn" onclick="searchProducts()">
+            <img class="search-img" src="images/search-icon.png"></button>
+    </div>
+
+    <div class="header-right-div">
+        <a href="amazon-orders.html" class="text-tag"><p class="return-txt">Returns</p><p class="order-txt">& Orders</p></a>
+        <a class="cart-a-tag" href="amazon-cart.html"><button class="cart-btn"><img class="cart-img" src="images/cart-icon.png"></a>
+            <div class="cart-txt">Cart</div>
+            <div class="cart-count">0</div>
+        </button>
+    </div>
+
+</div>
+
+<!--Size Chart-->
+<div class="size-chart-container">
+
+    <div class="size-chart Chart-Popup1">
+        <div class="chart-heading-div">
+        <h1 class="chart-heading"><span class="size-chart-product-name1"></span> - Size Chart</h1>
+        <button class="close-button" onclick=" ClosePopUp()
+        "><h2>x</h2></button>
+        </div>
+        <p class="inner-text">IN REGULAR</p>
+        <table>
+            <thead>
+                <tr class="add-color">
+                <th>Brand Size</th>
+                <th>Chest</th>
+                <th>Shoulder (in)</th>
+                <th>Front Length</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>S</td>
+                <td>40</td>
+                <td>16.5</td>
+                <td>26.5</td>
+                </tr>
+                <tr class="add-color">
+                <td>M</td>
+                <td>42</td>
+                <td>17.5</td>
+                <td>27</td>
+                </tr>
+                <tr>
+                <td>L</td>
+                <td>44</td>
+                <td>18</td>
+                <td>27.5</td>
+                </tr>
+                <tr class="add-color">
+                <td>XL</td>
+                <td>46</td>
+                <td>19</td>
+                <td>28.5</td>
+                </tr>
+                <tr>
+                <td>XXl</td>
+                <td>48</td>
+                <td>20</td>
+                <td>29</td>
+                </tr>
+    
+            </tbody>
+            </table>
+    </div>
+
+    <div class="size-chart Chart-Popup2">
+        <div class="chart-heading-div">
+        <h1 class="chart-heading"><span class="size-chart-product-name2"></span> - Size Chart</h1>
+        <button class="close-button" onclick=" ClosePopUp()
+        "><h2>x</h2></button>
+        </div>
+        <p class="inner-text">IN REGULAR</p>
+        <table>
+            <thead>
+                <tr class="add-color">
+                <th>Brand Size</th>
+                <th>Standard Size</th>
+                <th>Waist (in)</th>
+                <th>Inseam (in)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>28</td>
+                <td>28</td>
+                <td>28-30</td>
+                <td>32</td>
+                </tr>
+                <tr class="add-color">
+                  <td>30</td>
+                  <td>30</td>
+                  <td>30-32</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td>32</td>
+                  <td>32-34</td>
+                  <td>32</td>
+                </tr>
+                <tr class="add-color">
+                  <td>34</td>
+                  <td>34</td>
+                  <td>34-36</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                <td>36</td>
+                <td>36</td>
+                <td>36-38</td>
+                <td>32</td>
+                </tr>
+                <tr>
+                <td>38</td>
+                <td>38</td>
+                <td>38-40</td>
+                <td>32</td>
+                </tr>
+
+            </tbody>
+            </table>
+    </div>
+
+    <div class="size-chart Chart-Popup3">
+        <div class="chart-heading-div">
+          <h1 class="chart-heading"><span class="size-chart-product-name3"></span> - Size Chart</h1>
+        <button class="close-button" onclick=" ClosePopUp()
+        "><h2>x</h2></button>
+        </div>
+        <p class="inner-text">IN REGULAR</p>
+        <table>
+            <thead>
+                <tr class="add-color">
+                <th>Brand Size</th>
+                <th>UK/India</th>
+                <th>EU</th>
+                <th>USA</th>
+                <th>Heel to teo(in)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>39</td>
+                    <td>6</td>
+                    <td>9.4</td>
+                </tr>
+                <tr class="add-color">
+                <td>6</td>
+                <td>6</td>
+                <td>40</td>
+                <td>7</td>
+                <td>9.8</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>7</td>
+                  <td>41</td>
+                  <td>8</td>
+                  <td>10.2</td>
+                </tr>
+                <tr class="add-color">
+                  <td>8</td>
+                  <td>8</td>
+                  <td>42</td>
+                  <td>9</td>
+                  <td>10.6</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>9</td>
+                  <td>43</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+                <tr class="add-color">
+                <td>10</td>
+                <td>10</td>
+                <td>44</td>
+                <td>11</td>
+                <td>11.4</td>
+                </tr>
+                <tr>
+                <td>11</td>
+                <td>11</td>
+                <td>45</td>
+                <td>12</td>
+                <td>11.4</td>
+                </tr>
+                <tr class="add-color">
+                  <td>12</td>
+                  <td>12</td>
+                  <td>46</td>
+                  <td>13</td>
+                  <td>11.8</td>
+                </tr>
+
+            </tbody>
+            </table>
+    </div>    
+
+    <div class="size-chart Chart-Popup4">
+        <div class="chart-heading-div">
+          <h1 class="chart-heading"><span class="size-chart-product-name4"></span> - Size Chart</h1>
+        <button class="close-button" onclick=" ClosePopUp()
+        "><h2>x</h2></button>
+        </div>
+        <p class="inner-text">IN REGULAR</p>
+        <table>
+            <thead>
+                <tr class="add-color">
+                <th>Brand Size</th>
+                <th>Bust (in)</th>
+                <th>Waist (in)</th>
+                <th>Hip (in)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>S</td>
+                <td>34</td>
+                <td>30</td>
+                <td>30</td>
+                </tr>
+                <tr class="add-color">
+                  <td>M</td>
+                  <td>36</td>
+                  <td>32</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>L</td>
+                  <td>38</td>
+                  <td>34</td>
+                  <td>34</td>
+                </tr>
+                <tr class="add-color">
+                  <td>XL</td>
+                  <td>40</td>
+                  <td>36</td>
+                  <td>36</td>
+                </tr>
+                <tr>
+                <td>XXL</td>
+                <td>42</td>
+                <td>38</td>
+                <td>38</td>
+                </tr>
+                <tr class="add-color">
+                <td>3XL</td>
+                <td>44</td>
+                <td>40</td>
+                <td>40</td>
+                </tr>
+      
+            </tbody>
+            </table>
+      </div>
+
+</div>      
+
+<!--Product Grid-->
+<div class="no-search-result">
+    <p class="search-result">Looks like no Product matches your search.</p>
+    <button onclick="location.reload()">Show all Products</button>
+</div>
+
+<div class="home-product-grid">
+
+    <!--Product 1-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product1-img" src="images/product1-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product1-info"><strong>Samsung S24 Ultra 5G</strong><br> Titanium <span id="product1-color-text1">Black</span>(12, 256GB Storage)</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating5-img.png"><span>1,724</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product1-cost" value="129999">129999</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong>Titanium <span id="product1-color-text2">Black</span></strong></p>
+            </div>
+            <div class="product-options-div product-option-type1">
+                <button onclick="
+                    ProductChange('product1-img', 'images/product1-1.jpg', 'product1-color-text1', 'Black','product1-color-text2')"
+                    ><img src="images/product1-1.jpg">
+                </button>
+
+                <button onclick="
+                    ProductChange('product1-img', 'images/product1-2.jpg', 'product1-color-text1', 'Gray','product1-color-text2')"
+                    ><img src="images/product1-2.jpg">
+                </button>
+
+                <button onclick="
+                    ProductChange('product1-img', 'images/product1-3.jpg', 'product1-color-text1', 'Violet','product1-color-text2')"
+                    ><img src="images/product1-3.jpg">
+                </button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark1" src=""><span id="added-text1"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark1','added-text1');
+                Add_Product_Details_to_Cart('product1-img', 'product1-info', 'product1-cost', 'product1-color-text2')"
+            >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!--Product 2-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product2-img" src="images/product2-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product2-info"><strong>Samsung S21 Fe 5G</strong><br><span id="product2-color-text1">Olive</span> (8, 256GB Storage) with Snapdragon 888 (2023)</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>1,873</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product2-cost" value="32999">32999</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product2-color-text2">Olive</span></strong></p>
+            </div>
+            <div class="product-options-div product-option-type2">
+                <button class="product2-option1"
+                    onclick="ProductChange('product2-img', 'images/product2-1.jpg', 'product2-color-text1', 'Olive', 'product2-color-text2')">
+                </button>
+                <button class="product2-option2"
+                    onclick="ProductChange('product2-img', 'images/product2-2.jpg', 'product2-color-text1', 'Graphite', 'product2-color-text2')">
+                </button>
+                <button class="product2-option3"
+                    onclick="ProductChange('product2-img', 'images/product2-3.jpg', 'product2-color-text1', 'White', 'product2-color-text2')">
+                </button>
+                <button class="product2-option4"
+                    onclick="ProductChange('product2-img', 'images/product2-4.jpg', 'product2-color-text1', 'Lavender', 'product2-color-text2')">
+                </button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark2" src=""><span id="added-text2"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark2','added-text2');
+                Add_Product_Details_to_Cart('product2-img', 'product2-info', 'product2-cost', 'product2-color-text2')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!--Product 3-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product3-img" src="images/product3-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product3-info"><strong>ADRO</strong><br> Unisex Fleece Hooded <span id="product3-color-text1">Maroon</span> Hoodie | Unisex Hoodie</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>1,804</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product3-cost" value="949">949</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product3-color-text2">Maroon</span></strong></p>
+                <button onclick="const chart_title = 'ADRO Hoodie';
+                OpenPopUp1(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select id="product3-size" class="select-option">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            <div class="label-quantity">
+                <label >Quantity:</label>
+                <select id="product3-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product3-option1"
+                        onclick="ProductChange('product3-img', 'images/product3-1.jpg', 'product3-color-text1', 'Maroon', 'product3-color-text2')"
+                    ></button>
+                    <button class="product3-option2"
+                        onclick="ProductChange('product3-img', 'images/product3-2.jpg', 'product3-color-text1', 'Black', 'product3-color-text2')"
+                    ></button>
+                    <button class="product3-option3"
+                        onclick="ProductChange('product3-img', 'images/product3-3.jpg', 'product3-color-text1', 'Pista', 'product3-color-text2')"    
+                    ></button>
+                    <button class="product3-option4"
+                        onclick="ProductChange('product3-img', 'images/product3-4.jpg', 'product3-color-text1', 'Pink', 'product3-color-text2')"
+                    ></button>
+                    <button class="product3-option5"
+                        onclick="ProductChange('product3-img', 'images/product3-5.jpg', 'product3-color-text1', 'Sky Blue', 'product3-color-text2')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark3" src=""><span id="added-text3"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark3','added-text3', 'product3-quantity');
+                Add_Product_Details_to_Cart('product3-img', 'product3-info', 'product3-cost', 'product3-color-text2', 'product3-size', 'product3-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>    
+
+    <!--Product 4-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product4-img" src="images/product4-1-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product4-info"><strong>Safari Persia</strong><br>Check-in Polycarbonate Hard Sided 8 Wheels Trolley Bag</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>827</span>
+            </div>
+            <div class="product-cost-div">
+                <span>₹ <p id="product4-cost" value="1899"> 1899</p></span>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product4-color-text">Pearl Blue</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Size:</label>
+                <select class="select-option-type-2" id="product4-size" onchange="Product4_Size_Price_Change('product4-img','product4-cost')">
+                    <option value="S">Cabin | 55cm | small</option>
+                    <option value="M">Checkin | 65cm | Medium</option>
+                    <option value="L">Checkin | 77cm | Large</option>
+                    <option value="set-2">Set of 2 (55cm/65cm)</option>
+                    <option value="set-3">Set of 3 (55cm/65cm/77cm)</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type4">
+                <button
+                onclick="Product_Color_Change('product4-color-text', 'Pearl Blue')
+                Product4_Size_Price_Change('product4-img','product4-cost')"
+                ><img src="images/product4-1-1.jpg"></button>
+                <button
+                onclick="Product_Color_Change('product4-color-text', 'Spearmint')
+                Product4_Size_Price_Change('product4-img','product4-cost')"
+                ><img src="images/product4-2-1.jpg"></button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark4" src=""><span id="added-text4"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark4','added-text4')
+                Add_Product_Details_to_Cart('product4-img', 'product4-info', 'product4-cost', 'product4-color-text', 'product4-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+
+    <!--Product 5-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product5-img" src="images/product5-1.jpg">
+                <img class="bestseller-logo" src="images/Best-Seller-logo.png">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product5-info"><strong>Samsung Galaxy Buds2 Pro</strong><br> Truly Wireless Earbuds with Noise Cancellation</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>3,878</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product5-cost" value="9999">9999</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product5-color-text">Graphite</span></strong></p>
+            </div>
+            <div class="product-options-div product-option-type1">
+                <button
+                    onclick="ProductChange('product5-img', 'images/product5-1.jpg', 'product5-color-text', 'Graphite')"
+                ><img src="images/product5-1.jpg"></button>
+                <button
+                    onclick="ProductChange('product5-img', 'images/product5-2.jpg', 'product5-color-text', 'Lavender')"
+                ><img src="images/product5-2.jpg"></button>
+                <button
+                    onclick="ProductChange('product5-img', 'images/product5-3.jpg', 'product5-color-text', 'White')"
+                ><img src="images/product5-3.jpg"></button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark5" src=""><span id="added-text5"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark5','added-text5')
+                Add_Product_Details_to_Cart('product5-img', 'product5-info', 'product5-cost', 'product5-color-text')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!--Product 6-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product6-img" src="images/product6-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product6-info"><strong>Amazon Brand - Symbol</strong><br> Men's Regular Fit Casual Trouser</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>16,548</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product6-cost" value="849">849</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product6-color-text">Black</span></strong></p>
+                <button onclick="const chart_title = 'Amazon Brand Trouser';
+                OpenPopUp2(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product6-size">
+                    <option value="28">28</option>
+                    <option value="30">30</option>
+                    <option value="32">32</option>
+                    <option value="34">34</option>
+                    <option value="36">36</option>
+                    <option value="38">38</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product6-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product6-option1"
+                        onclick="ProductChange('product6-img', 'images/product6-1.jpg', 'product6-color-text', 'Black')"
+                    ></button>
+                    <button class="product6-option2"
+                        onclick="ProductChange('product6-img', 'images/product6-2.jpg', 'product6-color-text', 'Grey')"
+                    ></button>
+                    <button class="product6-option3"
+                        onclick="ProductChange('product6-img', 'images/product6-3.jpg', 'product6-color-text', 'Olive')"
+                    ></button>
+                    <button class="product6-option4"
+                        onclick="ProductChange('product6-img', 'images/product6-4.jpg', 'product6-color-text', 'Navy Blue')"
+                    ></button>
+                    <button class="product6-option5"
+                        onclick="ProductChange('product6-img', 'images/product6-5.jpg', 'product6-color-text', 'Brown')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark6" src=""><span id="added-text6"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark6','added-text6', 'product6-quantity', 'product6-quantity')
+                Add_Product_Details_to_Cart('product6-img', 'product6-info', 'product6-cost', 'product6-color-text', 'product6-size', 'product6-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+
+    <!--Product 7-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product7-img" src="images/product7-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product7-info"><strong>Samsung Galaxy Watch4</strong><br>(4.0 cm, Compatible with Android only)<p id="product7-size" value="Bluetooth"> Bluetooth</p></p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>8,337</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹<p id="product7-cost" value="9999">9999</p></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product7-color-text">Black</span></strong></p>
+            </div>
+            <div class="select-option-div option-type-button">
+                <button id="product7-cost1" value="9999"
+                    onclick="ProductPriceChange('product7-cost','9999', 'product7-size', 'Bluetooth', 'LTE', '9999')"
+                >Bluetooth</button>
+                <button id="product7-cost2" value="12999"
+                    onclick="ProductPriceChange('product7-cost','12999', 'product7-size', 'Bluetooth', 'LTE', '9999')"
+                >LTE</button>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product7-option1"
+                        onclick="ProductChange('product7-img', 'images/product7-1.jpg', 'product7-color-text', 'Black')"
+                    ></button>
+                    <button class="product7-option2"
+                        onclick="ProductChange('product7-img', 'images/product7-2.jpg', 'product7-color-text', 'Graphite')"
+                    ></button>
+                    <button class="product7-option3"
+                        onclick="ProductChange('product7-img', 'images/product7-3.jpg', 'product7-color-text', 'Gold')"
+                    ></button>
+                    <button class="product7-option4"
+                        onclick="ProductChange('product7-img', 'images/product7-4.jpg', 'product7-color-text', 'Green')"
+                    ></button>
+                    <button class="product7-option5"
+                        onclick="ProductChange('product7-img', 'images/product7-5.jpg', 'product7-color-text', 'Sapphire')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark7" src=""><span id="added-text7"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark7','added-text7')
+                Add_Product_Details_to_Cart('product7-img', 'product7-info', 'product7-cost', 'product7-color-text', 'product7-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!--Product 8-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product8-img" src="images/product8-1.jpg">
+                <img class="amazonchoice-logo" src="images/Amazon-choice.webp">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product8-info"><strong>Red Tape</strong><br> Men's Slip-On Sliders for Men | Slippers Slip-Ons</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>2,337</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product8-cost" value="579">579</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product8-color-text">Black</span></strong></p>
+                <button onclick="const chart_title = 'Red Tape Sliders';
+                OpenPopUp3(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label class="label1">Size:</label>
+                <select class="select-option" id="product8-size">
+                    <option value="6 UK">6 UK</option>
+                    <option value="7 UK">7 UK</option>
+                    <option value="8 UK">8 UK</option>
+                    <option value="9 UK">9 UK</option>
+                    <option value="10 UK">10 UK</option>
+                    <option value="11 UK">11 UK</option>
+                    <option value="12 UK">12 UK</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product8-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type4">
+                <div class="product-option-div">
+                    <button class="product8-option1"
+                        onclick="ProductChange('product8-img', 'images/product8-1.jpg', 'product8-color-text', 'Black')"
+                    ><img src="images/product8-1.jpg"></button>
+                    <button class="product8-option2"
+                        onclick="ProductChange('product8-img', 'images/product8-2.jpg', 'product8-color-text', 'Navy Blue')"
+                    ><img src="images/product8-2.jpg"></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark8" src=""><span id="added-text8"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark8','added-text8', 'product8-quantity')
+                Add_Product_Details_to_Cart('product8-img', 'product8-info', 'product8-cost', 'product8-color-text', 'product8-size', 'product8-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 9-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product9-img" src="images/product9-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product9-info"><strong class="strong-text">U.S. POLO ASSN</strong><br>Men's Casual Sneakers</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>2,337</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product9-cost" value="1079">1079</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product9-color-text">Brown</span></strong></p>
+                <button onclick="const chart_title = 'U.S.POLO ASSN Shoes';
+                OpenPopUp3(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label class="label1">Size:</label>
+                <select class="select-option" id="product9-size">
+                    <option value="6 UK">6 UK</option>
+                    <option value="7 UK">7 UK</option>
+                    <option value="8 UK">8 UK</option>
+                    <option value="9 UK">9 UK</option>
+                    <option value="10 UK">10 UK</option>
+                    <option value="11 UK">11 UK</option>
+                    <option value="12 UK">12 UK</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product9-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type4">
+                <div class="product-option-div">
+                    <button class="product9-option1"
+                        onclick="ProductChange('product9-img', 'images/product9-1.jpg', 'product9-color-text', 'Brown')"
+                    ><img src="images/product9-1.jpg"></button>
+                    <button class="product9-option2"
+                        onclick="ProductChange('product9-img', 'images/product9-2.jpg', 'product9-color-text', 'White')"
+                    ><img src="images/product9-2.jpg"></button>
+                    <button class="product9-option3"
+                        onclick="ProductChange('product9-img', 'images/product9-3.jpg', 'product9-color-text', 'Black')"
+                    ><img src="images/product9-3.jpg"></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark9" src=""><span id="added-text9"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark9','added-text9', 'product9-quantity')
+                Add_Product_Details_to_Cart('product9-img', 'product9-info', 'product9-cost', 'product9-color-text', 'product9-size', 'product9-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 10-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product10-img" src="images/product10-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product10-info"><strong>Samsung Galaxy Tab S9 FE</strong><br>10.9 inch Display, 8/256 GB Expandable,With S Pen,IP68<p id="product10-size" value="Wifi">Wifi</p></p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>537</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <p id="product10-cost" value="37999">37999</p></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product10-color-text">Gray</span></strong></p>
+            </div>
+            <div class="select-option-div option-type-button">
+                <button
+                    onclick="ProductPriceChange('product10-cost','37999', 'product10-size', 'Wifi', 'Wifi + 5G', '37999')"
+                >Wifi</button>
+                <button
+                    onclick="ProductPriceChange('product10-cost','42999', 'product10-size', 'Wifi', 'Wifi + 5G', '37999')"
+                >Wifi + 5G</button>
+            </div>
+            <div class="product-options-div product-option-type4 product-option-type5">
+                <button
+                    onclick="ProductChange('product10-img', 'images/product10-1.jpg', 'product10-color-text', 'Gray')"
+                ><img src="images/product10-1.jpg"></button>
+                <button
+                    onclick="ProductChange('product10-img', 'images/product10-2.jpg', 'product10-color-text', 'White')"
+                ><img src="images/product10-2.jpg"></button>
+                <button
+                    onclick="ProductChange('product10-img', 'images/product10-3.jpg', 'product10-color-text', 'Lavender')"
+                ><img src="images/product10-3.jpg"></button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark10" src=""><span id="added-text10"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark10','added-text10')
+                Add_Product_Details_to_Cart('product10-img', 'product10-info', 'product10-cost', 'product10-color-text', 'product10-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 11-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product11-img" src="images/product11-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product11-info"><strong>Apple iPad Air</strong><br>(5th Generation): with M1 chip, 10.9 inch Liquid Retina Display</p><p id="product11-size" value="Wifi">Wifi</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>767</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <p id="product11-cost" value="47999">47999</p></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product11-color-text">Gray</span></strong></p>
+            </div>
+            <div class="select-option-div option-type-button">
+                <button
+                    onclick="ProductPriceChange('product11-cost','47999', 'product11-size', 'Wifi', 'Wifi + 5G', '47999')"
+                    >Wifi</button>
+                <button
+                    onclick="ProductPriceChange('product11-cost','57999', 'product11-size', 'Wifi', 'Wifi + 5G', '47999')"
+                    >Wifi + 5G</button>
+            </div>
+            <div class="product-options-div product-option-type4 product-option-type5">
+                <button
+                    onclick="ProductChange('product11-img', 'images/product11-1.jpg', 'product11-color-text', 'Gray')"
+                ><img src="images/product11-1.jpg"></button>
+                <button
+                    onclick="ProductChange('product11-img', 'images/product11-2.jpg', 'product11-color-text', 'Blue')"
+                ><img src="images/product11-2.jpg"></button>
+                <button
+                    onclick="ProductChange('product11-img', 'images/product11-3.jpg', 'product11-color-text', 'Pink')"
+                ><img src="images/product11-3.jpg"></button>
+                <button
+                    onclick="ProductChange('product11-img', 'images/product11-4.jpg', 'product11-color-text', 'Purple')"
+                ><img src="images/product11-4.jpg"></button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark11" src=""><span id="added-text11"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark11','added-text11')
+                Add_Product_Details_to_Cart('product11-img', 'product11-info', 'product11-cost', 'product11-color-text', 'product11-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 12-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product12-img" src="images/product12-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product12-info"><strong>iQOO Z7 Pro 5G</strong><br>(8GB RAM, 256GB Storage) | 3D Curved AMOLED Display</p><p id="product12-size" value="128GB">128GB</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>7193</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <p id="product12-cost" value="22999">22999</p></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product12-color-text">Blue Lagoon</span></strong></p>
+            </div>
+            <div class="select-option-div option-type-button">
+                <button
+                    onclick="ProductPriceChange('product12-cost','22999', 'product12-size', '128GB', '256GB', '22999')"
+                >128 GB</button>
+                <button
+                    onclick="ProductPriceChange('product12-cost','23999', 'product12-size', '128GB', '256GB', '22999')"
+                >256 GB</button>
+            </div>
+            <div class="product-options-div product-option-type4 product-option-type5">
+                <button
+                    onclick="ProductChange('product12-img', 'images/product12-1.jpg', 'product12-color-text', 'Blue Lagoon')"
+                ><img src="images/product12-1.jpg"></button>
+                <button
+                    onclick="ProductChange('product12-img', 'images/product12-2.jpg', 'product12-color-text', 'Graphite Matte')"
+                ><img src="images/product12-2.jpg"></button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark12" src=""><span id="added-text12"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark12','added-text12')
+                Add_Product_Details_to_Cart('product12-img', 'product12-info', 'product12-cost', 'product12-color-text', 'product12-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!--Product 13-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product13-img" src="images/product13-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product13-info"><strong>HEATHEX</strong><br>Hoodie | Unisex Hoodie | Cotton Fleece Winter wear</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>170</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product13-cost" value="499">499</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product13-color-text">Grey</span></strong></p>
+                <button onclick="const chart_title = 'HEATHEX Hoodie';
+                OpenPopUp1(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product13-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            <div class="label-quantity">
+                <label >Quantity:</label>
+                <select id="product13-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product13-option1"
+                        onclick="ProductChange('product13-img', 'images/product13-1.jpg', 'product13-color-text', 'Grey')"
+                    ></button>
+                    <button class="product13-option2"
+                        onclick="ProductChange('product13-img', 'images/product13-2.jpg', 'product13-color-text', 'Navy Blue')"
+                    ></button>
+                    <button class="product13-option3"
+                        onclick="ProductChange('product13-img', 'images/product13-3.jpg', 'product13-color-text', 'Steel Blue')"
+                    ></button>
+                    <button class="product13-option4"
+                        onclick="ProductChange('product13-img', 'images/product13-4.jpg', 'product13-color-text', 'Olive')"
+                    ></button>
+                    <button class="product13-option5"
+                        onclick="ProductChange('product13-img', 'images/product13-5.jpg', 'product13-color-text', 'Maroon')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark13" src=""><span id="added-text13"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark13','added-text13', 'product13-quantity')
+                Add_Product_Details_to_Cart('product13-img', 'product13-info', 'product13-cost', 'product13-color-text', 'product13-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 14-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product14-img" src="images/product14-1.jpg">
+                <img class="bestseller-logo" src="images/Best-Seller-logo.png">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product14-info"><strong>OnePlus Bullets</strong><br>Bluetooth Wireless in Ear Earphones, 30 Hrs Battery Life</p><p id="product14-size" value="BWZ-2">BWZ-2</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>1,48,870</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product14-cost" value="1499">1499</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product14-color-text">Black</span></strong></p>
+            </div>
+            <div class="select-option-div option-type-button">
+                <button
+                    onclick="ProductPriceChange('product14-cost', '1499', 'product14-size', 'BWZ-2', 'BWZ-2 ANC', '1499')"
+                >BWZ-2</button>
+                <button
+                    onclick="ProductPriceChange('product14-cost', '1999', 'product14-size', 'BWZ-2', 'BWZ-2 ANC', '1499')"
+                >BWZ-2 ANC</button>
+            </div>
+            <div class="product-options-div product-option-type4 product-option-type5">
+                <button
+                    onclick="ProductChange('product14-img', 'images/product14-1.jpg', 'product14-color-text', 'Black')"
+                ><img src="images/product14-1.jpg"></button>
+                <button
+                onclick="ProductChange('product14-img', 'images/product14-2.jpg', 'product14-color-text', 'Red')"
+                ><img src="images/product14-2.jpg"></button>
+                <button
+                onclick="ProductChange('product14-img', 'images/product14-3.jpg', 'product14-color-text', 'Jazz Green')"
+                ><img src="images/product14-3.jpg"></button>
+                <button
+                onclick="ProductChange('product14-img', 'images/product14-4.jpg', 'product14-color-text', 'Blue')"
+                ><img src="images/product14-4.jpg"></button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark14" src=""><span id="added-text14"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark14','added-text14')
+                Add_Product_Details_to_Cart('product14-img', 'product14-info', 'product14-cost', 'product14-color-text', 'product14-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 15-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product15-img" src="images/product15-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product15-info"><strong>Samsung Galaxy Book3</strong><br>13th Gen 1335U - 16/512 GB SSD/Windows 11 (15.6 Inch)</p><p id="product15-size" value="i5">i5</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>753</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product15-cost" value="57999">57999</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product15-color-text">Silver</span></strong></p>
+            </div>
+            <div class="select-option-div option-type-button">
+                <button
+                    onclick="ProductPriceChange('product15-cost', '57999', 'product15-size', 'i5', 'i7', '57999')"
+                >i5</button>
+                <button
+                    onclick="ProductPriceChange('product15-cost', '67999', 'product15-size', 'i5', 'i7', '57999')"
+                >i7</button>
+            </div>
+            <div class="product-options-div product-option-type4 product-option-type5">
+                <button
+                onclick="ProductChange('product15-img', 'images/product15-1.jpg', 'product15-color-text', 'Silver')"
+                ><img src="images/product15-1.jpg"></button>
+                <button
+                onclick="ProductChange('product15-img', 'images/product15-2.jpg', 'product15-color-text', 'Graphite')"
+                ><img src="images/product15-2.jpg"></button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark15" src=""><span id="added-text15"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark15','added-text15')
+                Add_Product_Details_to_Cart('product15-img', 'product15-info', 'product15-cost', 'product15-color-text', 'product15-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 16-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product16-img" src="images/product16-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product16-info"><strong>U.S. POLO ASSN</strong><br>US Polo Association Mens Specter 2.0 Slide</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>733</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <p id="product16-cost" value="679">679</p></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product16-color-text">Black</span></strong></p>
+                <button onclick="const chart_title = 'U.S.POLO ASSN Sliders';
+                OpenPopUp3(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label class="label1">Size:</label>
+                <select class="select-option" id="product16-size">
+                    <option value="6 UK">6 UK</option>
+                    <option value="7 UK">7 UK</option>
+                    <option value="8 UK">8 UK</option>
+                    <option value="9 UK">9 UK</option>
+                    <option value="10 UK">10 UK</option>
+                    <option value="11 UK">11 UK</option>
+                    <option value="12 UK">12 UK</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product16-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type4">
+                <div class="product-option-div">
+                    <button class="product16-option1"
+                        onclick="ProductChange('product16-img', 'images/product16-1.jpg', 'product16-color-text', 'Black')"
+                    ><img src="images/product16-1.jpg"></button>
+                    <button class="product16-option2"
+                        onclick="ProductChange('product16-img', 'images/product16-2.jpg', 'product16-color-text', 'Navy Bluw')"
+                    ><img src="images/product16-2.jpg"></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark16" src=""><span id="added-text16"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark16','added-text16', 'product16-quantity')
+                Add_Product_Details_to_Cart('product16-img', 'product16-info', 'product16-cost', 'product16-color-text', 'product16-size', 'product16-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 17-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product17-img" src="images/product17-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product17-info"><strong>Puma</strong><br>Puma Laptop Backpack<span id="product17-size">16 Ltrs</span></p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>373</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹<p id="product17-cost" value="479">479</p></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product17-color-text">Blue</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product17-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div product-option-div-type3">
+                    <button class="product17-option1"
+                    onclick="ProductChange('product17-img', 'images/product17-1.jpg', 'product17-color-text', 'Blue')"
+                    ></button>
+                    <button class="product17-option2"
+                    onclick="ProductChange('product17-img', 'images/product17-2.jpg', 'product17-color-text', 'Black')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark17" src=""><span id="added-text17"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark17','added-text17', 'product17-quantity')
+                Add_Product_Details_to_Cart('product17-img', 'product17-info', 'product17-cost', 'product17-color-text', 'product17-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!--Product 18-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product18-img" src="images/product18-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product18-info"><strong>Daevish</strong><br>Gold Printed 3/4 Sleeves Maxi Length Dress for Women & Girl's</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>137</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product18-cost" value="699">699</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product18-color-text">Blue</span></strong></p>
+                <button onclick="const chart_title = 'Daevish Dress';
+                OpenPopUp4(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label class="label1">Size:</label>
+                <select class="select-option" id="product18-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="3XL">3XL</option>
+                    <option value="4XL">4XL</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product18-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product18-option1"
+                        onclick="ProductChange('product18-img', 'images/product18-1.jpg', 'product18-color-text', 'Blue')"
+                    ></button>
+                    <button class="product18-option2"
+                        onclick="ProductChange('product18-img', 'images/product18-2.jpg', 'product18-color-text', 'Black')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark18" src=""><span id="added-text18"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark18','added-text18', 'product18-quantity')
+                Add_Product_Details_to_Cart('product18-img', 'product18-info', 'product18-cost', 'product18-color-text', 'product18-size', 'product18-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 19-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product19-img" src="images/product19-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product19-info"><strong>KERI PERRY</strong><br>Women Georgette Woven Fit & Flared Western Dress</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>178</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product19-cost" value="825">825</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product19-color-text">Sea Green</span></strong></p>
+                <button onclick="const chart_title = 'KERI PERRY Dress';
+                OpenPopUp4(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label class="label1">Size:</label>
+                <select class="select-option" id="product19-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                    <option value="3XL">3XL</option>
+                    <option value="4XL">4XL</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product19-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product19-option1"
+                    onclick="ProductChange('product19-img', 'images/product19-1.jpg', 'product19-color-text', 'Sea Green')"
+                    ></button>
+                    <button class="product19-option2"
+                    onclick="ProductChange('product19-img', 'images/product19-2.jpg', 'product19-color-text', 'Pink')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark19" src=""><span id="added-text19"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark19','added-text19', 'product19-quantity')
+                Add_Product_Details_to_Cart('product19-img', 'product19-info', 'product19-cost', 'product19-color-text', 'product19-size', 'product19-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 20-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product20-img" src="images/product20-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product20-info"><strong>Gear</strong><br>Gear Laptop Backpack<span id="product20-size">25 Ltrs</span></p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>773</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product20-cost" value="879">879</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product20-color-text">Blue</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product20-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div product-option-div-type3">
+                    <button class="product20-option1"
+                    onclick="ProductChange('product20-img', 'images/product20-1.jpg', 'product20-color-text', 'Blue')"
+                    ></button>
+                    <button class="product20-option2"
+                    onclick="ProductChange('product20-img', 'images/product20-2.jpg', 'product20-color-text', 'Black')"
+                    ></button>
+                    <button class="product20-option3"
+                    onclick="ProductChange('product20-img', 'images/product20-3.jpg', 'product20-color-text', 'Brown')"
+                    ></button>
+                    <button class="product20-option4"
+                    onclick="ProductChange('product20-img', 'images/product20-5.jpg', 'product20-color-text', 'Leather')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark20" src=""><span id="added-text20"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark20','added-text20', 'product20-quantity')
+                Add_Product_Details_to_Cart('product20-img', 'product20-info', 'product20-cost', 'product20-color-text', 'product20-size', 'product20-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!--Product 21-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product21-img" src="images-2/product21-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product21-info"><strong>J B Fashion</strong><br>Casual Shirt for Men | Shirt for Men | Men Stylish Shirt </p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>67</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product21-cost" value="749">749</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product21-color-text">Blue</span></strong></p>
+                <button onclick="const chart_title = 'J B Fashion Shirt';
+                OpenPopUp1(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product21-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            <div class="label-quantity">
+                <label >Quantity:</label>
+                <select id="product21-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product21-option1"
+                    onclick="ProductChange('product21-img', 'images-2/product21-1.jpg', 'product21-color-text', 'Blue')"
+                    ></button>
+                    <button class="product21-option2"
+                    onclick="ProductChange('product21-img', 'images-2/product21-2.jpg', 'product21-color-text', 'Maroon')"
+                    ></button>
+                    <button class="product21-option3"
+                    onclick="ProductChange('product21-img', 'images-2/product21-3.jpg', 'product21-color-text', 'Khaki')"
+                    ></button>
+                    <button class="product21-option4"
+                    onclick="ProductChange('product21-img', 'images-2/product21-4.jpg', 'product21-color-text', 'Pista')"
+                    ></button>
+                    <button class="product21-option5"
+                    onclick="ProductChange('product21-img', 'images-2/product21-5.jpg', 'product21-color-text', 'Pink')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark21" src=""><span id="added-text21"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark21','added-text21', 'product21-quantity')
+                Add_Product_Details_to_Cart('product21-img', 'product21-info', 'product21-cost', 'product21-color-text', 'product21-size', 'product21-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 22-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product22-img" src="images-2/product22.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product22-info"><strong>Fastrack</strong><br>Analog White Dial Men's Watch NL38051SL06/NP38051SL06</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>877</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product22-cost" value="837">837</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product22-color-text">Brown</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product22-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark22" src=""><span id="added-text22"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark22','added-text22', 'product22-quantity')
+                Add_Product_Details_to_Cart('product22-img', 'product22-info', 'product22-cost', 'product22-color-text', null, 'product22-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 23-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product23-img" src="images-2/product23.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product23-info"><strong>Titan</strong><br>Analog Dial Women's Watch-NN2593SM01/NP2593SM01</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>807</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product23-cost" value="1327">1327</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product23-color-text">Silver</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product23-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark23" src=""><span id="added-text23"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark23','added-text23', 'product23-quantity')
+                Add_Product_Details_to_Cart('product23-img', 'product23-info', 'product23-cost', 'product23-color-text', null, 'product23-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 24-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product24-img" src="images-2/product24-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product24-info"><strong>Amazon Brand - Symbol</strong><br> Men's Cotton Solid Full Sleeve Casual Shirt Regular Fit</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>7,030</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product24-cost" value="479">479</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product24-color-text">Brown</span></strong></p>
+                <button onclick="const chart_title = 'Amazon Brand Shirt';
+                OpenPopUp1(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label class="label1">Size:</label>
+                <select class="select-option" id="product24-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product24-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product24-option1"
+                        onclick="ProductChange('product24-img', 'images-2/product24-1.jpg', 'product24-color-text', 'Brown')"
+                    ></button>
+                    <button class="product24-option2"
+                        onclick="ProductChange('product24-img', 'images-2/product24-2.jpg', 'product24-color-text', 'White')"
+                    ></button>
+                    <button class="product24-option3"
+                        onclick="ProductChange('product24-img', 'images-2/product24-3.jpg', 'product24-color-text', 'Beigi')"
+                    ></button>
+                    <button class="product24-option4"
+                        onclick="ProductChange('product24-img', 'images-2/product24-4.jpg', 'product24-color-text', 'Grey')"
+                    ></button>
+                    <button class="product24-option5"
+                        onclick="ProductChange('product24-img', 'images-2/product24-5.jpg', 'product24-color-text', 'Pink')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark24" src=""><span id="added-text24"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark24','added-text24', 'product24-quantity')
+                Add_Product_Details_to_Cart('product24-img', 'product24-info', 'product24-cost', 'product24-color-text', 'product24-size', 'product24-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 25-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product25-img" src="images-2/product25-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product25-info"><strong>Urbano Fashion</strong><br>Men's Slim Fit Washed Jeans Stretchable</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>8,741</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product25-cost" value="649">649</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product25-color-text">Navy Blue</span></strong></p>
+                <button onclick="const chart_title = 'Urbano Fashion Trouser';
+                OpenPopUp2(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product25-size">
+                    <option value="28">28</option>
+                    <option value="30">30</option>
+                    <option value="32">32</option>
+                    <option value="34">34</option>
+                    <option value="36">36</option>
+                    <option value="38">38</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product25-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product25-option1"
+                    onclick="ProductChange('product25-img', 'images-2/product25-1.jpg', 'product25-color-text', 'Navy Blue')"
+                    ></button>
+                    <button class="product25-option2"
+                    onclick="ProductChange('product25-img', 'images-2/product25-2.jpg', 'product25-color-text', 'Black')"
+                    ></button>
+                    <button class="product25-option3"
+                    onclick="ProductChange('product25-img', 'images-2/product25-3.jpg', 'product25-color-text', 'Blue')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark25" src=""><span id="added-text25"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark25','added-text25', 'product25-quantity')
+                Add_Product_Details_to_Cart('product25-img', 'product25-info', 'product25-cost', 'product25-color-text', 'product25-size', 'product25-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 26-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product26-img" src="images-2/product26.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product26-info"><strong>Borosil</strong><br>1L Electric Kettle, Stainless Steel Inner Body, Boil Water, Tea, Coffee</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>356</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product26-cost" value="1375">1375</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product26-color-text">Graphite</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product26-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark26" src=""><span id="added-text26"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark26','added-text26', 'product26-quantity')
+                Add_Product_Details_to_Cart('product26-img', 'product26-info', 'product26-cost', 'product26-color-text', null, 'product26-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 27-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product27-img" src="images-2/product27.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product27-info"><strong>Vega</strong><br>Round Hair Brush | Comb | Unisex | All Hair Types</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>31,388</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product27-cost" value="151">151</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product27-color-text">Black</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product27-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark27" src=""><span id="added-text27"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark27','added-text27', 'product27-quantity')
+                Add_Product_Details_to_Cart('product27-img', 'product27-info', 'product27-cost', 'product27-color-text', null, 'product27-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 28-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product28-img" src="images-2/product28.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product28-info"><strong>Allen Solly</strong><br>Men's Regular Fit Shirt</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>201</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product28-cost" value="749">749</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product28-color-text">Navy Blue</span></strong></p>
+                <button onclick="const chart_title = 'Allen Solly Shirt';
+                OpenPopUp1(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product28-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product28-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark28" src=""><span id="added-text28"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark28','added-text28', 'product28-quantity')
+                Add_Product_Details_to_Cart('product28-img', 'product28-info', 'product28-cost', 'product28-color-text', 'product28-size', 'product28-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 29-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product29-img" src="images-2/product29-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product29-info"><strong>ENDEAVOUR</strong><br>Men's Regular Fit Trackpants</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>16,072</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product29-cost" value="469">469</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product29-color-text">Grey</span></strong></p>
+                <button onclick="const chart_title = 'Urbano Fashion Trouser';
+                OpenPopUp2(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product29-size">
+                    <option value="28">28</option>
+                    <option value="30">30</option>
+                    <option value="32">32</option>
+                    <option value="34">34</option>
+                    <option value="36">36</option>
+                    <option value="38">38</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product29-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product29-option1"
+                    onclick="ProductChange('product29-img', 'images-2/product29-1.jpg', 'product29-color-text', 'Grey')"
+                    ></button>
+                    <button class="product29-option2"
+                    onclick="ProductChange('product29-img', 'images-2/product29-2.jpg', 'product29-color-text', 'Black')"
+                    ></button>
+                    <button class="product29-option3"
+                    onclick="ProductChange('product29-img', 'images-2/product29-3.jpg', 'product29-color-text', 'Navy Blue')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark29" src=""><span id="added-text29"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark29','added-text29', 'product29-quantity')
+                Add_Product_Details_to_Cart('product29-img', 'product29-info', 'product29-cost', 'product29-color-text', 'product29-size', 'product29-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 30-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product30-img" src="images-2/product30-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product30-info"><strong>REYA</strong><br>Men's Regular Fit T-shirt</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>132</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product30-cost" value="349">349</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product30-color-text">White</span></strong></p>
+                <button onclick="const chart_title = 'Allen Solly Tshirt';
+                OpenPopUp1(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product30-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product30-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product30-option1"
+                    onclick="ProductChange('product30-img', 'images-2/product30-1.jpg', 'product30-color-text', 'White')"
+                    ></button>
+                    <button class="product30-option2"
+                    onclick="ProductChange('product30-img', 'images-2/product30-2.jpg', 'product30-color-text', 'Navy Blue')"
+                    ></button>
+                    <button class="product30-option3"
+                    onclick="ProductChange('product30-img', 'images-2/product30-3.jpg', 'product30-color-text', 'Black')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark30" src=""><span id="added-text30"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark30','added-text30', 'product30-quantity')
+                Add_Product_Details_to_Cart('product30-img', 'product30-info', 'product30-cost', 'product30-color-text', 'product30-size', 'product30-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 31-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product31-img" src="images-2/product31-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product31-info"><strong>Selvia</strong><br>Men's Regular Fit Trackpant</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>2,717</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product31-cost" value="361">361</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product31-color-text">Grey</span></strong></p>
+                <button onclick="const chart_title = 'Selvia Trackpant';
+                OpenPopUp2(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product31-size">
+                    <option value="28">28</option>
+                    <option value="30">30</option>
+                    <option value="32">32</option>
+                    <option value="34">34</option>
+                    <option value="36">36</option>
+                    <option value="38">38</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product31-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product31-option1"
+                    onclick="ProductChange('product31-img', 'images-2/product31-1.jpg', 'product31-color-text', 'Grey')"
+                    ></button>
+                    <button class="product31-option2"
+                    onclick="ProductChange('product31-img', 'images-2/product31-2.jpg', 'product31-color-text', 'Black')"
+                    ></button>
+                    <button class="product31-option3"
+                    onclick="ProductChange('product31-img', 'images-2/product31-3.jpg', 'product31-color-text', 'Navy Blue')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark31" src=""><span id="added-text31"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark31','added-text31', 'product31-quantity')
+                Add_Product_Details_to_Cart('product31-img', 'product31-info', 'product31-cost', 'product31-color-text', 'product31-size', 'product31-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 32-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product32-img" src="images-2/product32-1.jpg">
+                <img class="amazonchoice-logo" src="images/Amazon-choice.webp">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product32-info"><strong>Sparks</strong><br>Men's Sandals</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>24,523</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product32-cost" value="636">636</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product32-color-text">Black</span></strong></p>
+                <button onclick="const chart_title = 'Sparks Sandals';
+                OpenPopUp3(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label class="label1">Size:</label>
+                <select class="select-option" id="product32-size">
+                    <option value="6 UK">6 UK</option>
+                    <option value="7 UK">7 UK</option>
+                    <option value="8 UK">8 UK</option>
+                    <option value="9 UK">9 UK</option>
+                    <option value="10 UK">10 UK</option>
+                    <option value="11 UK">11 UK</option>
+                    <option value="12 UK">12 UK</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product32-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type4">
+                <div class="product-option-div">
+                    <button class="product32-option1"
+                    onclick="ProductChange('product32-img', 'images-2/product32-1.jpg', 'product32-color-text', 'Black')"
+                    ><img src="images-2/product32-1.jpg"></button>
+                    <button class="product32-option2"
+                    onclick="ProductChange('product32-img', 'images-2/product32-2.jpg', 'product32-color-text', 'Brown')"
+                    ><img src="images-2/product32-2.jpg"></button>
+                    <button class="product32-option3"
+                    onclick="ProductChange('product32-img', 'images-2/product32-3.jpg', 'product32-color-text', 'Blue')"
+                    ><img src="images-2/product32-3.jpg"></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark32" src=""><span id="added-text32"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark32','added-text32', 'product32-quantity')
+                Add_Product_Details_to_Cart('product32-img', 'product32-info', 'product32-cost', 'product32-color-text', 'product32-size', 'product32-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 33-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product33-img" src="images-2/product33-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product33-info"><strong>London Hills</strong><br>Men's Casual Printed Round Neck, Boho Style T-Shirt</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>653</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product33-cost" value="599">599</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product33-color-text">Green</span></strong></p>
+                <button onclick="const chart_title = 'London Hills Tshirt';
+                OpenPopUp1(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product33-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product33-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product33-option1"
+                    onclick="ProductChange('product33-img', 'images-2/product33-1.jpg', 'product33-color-text', 'Sea Green')"
+                    ></button>
+                    <button class="product33-option2"
+                    onclick="ProductChange('product33-img', 'images-2/product33-2.jpg', 'product33-color-text', 'Grey')"
+                    ></button>
+                    <button class="product33-option3"
+                    onclick="ProductChange('product33-img', 'images-2/product33-3.jpg', 'product33-color-text', 'Black')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark33" src=""><span id="added-text33"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark33','added-text33', 'product33-quantity')
+                Add_Product_Details_to_Cart('product33-img', 'product33-info', 'product33-cost', 'product33-color-text', 'product33-size', 'product33-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 34-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product34-img" src="images-2/product34-1-1.jpg">
+                <img class="bestseller-logo" src="images/Best-Seller-logo.png">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product34-info"><strong>Samsung</strong><br>Samsung Original 25W Travel Adapter<p id="product34-size" value="Charger">Charger</p></p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>35,381</span>
+            </div>
+            <div class="product-cost-div">
+                <span>₹ <p id="product34-cost" value="999">999</p></span>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product34-color-text">White</span></strong></p>
+            </div>
+            <div class="select-option-div option-type-button">
+                <button onclick="Product34_ChangeType1()">Charger</button>
+                <button onclick="Product34_ChangeType2()">Charger + Cable</button>
+            </div>
+            <div class="product-options-div product-option-type4 product-option-type5">
+                <button onclick="Product34_ImageChange1()"
+                ><img src="images-2/product34-1-1.jpg"></button>
+                <button onclick="Product34_ImageChange2()"                
+                ><img src="images-2/product34-2-1.jpg"></button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark34" src=""><span id="added-text34"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark34','added-text34')
+                Add_Product_Details_to_Cart('product34-img', 'product34-info', 'product34-cost', 'product34-color-text', 'product34-size')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 35-->
+
+        <div class="home-inner-grid-div">
+                <div class="product-img-div">
+                    <img class="product-img" id="product35-img" src="images-2/product35-1.jpg">
+                </div>
+                
+                <div class="product-info-div">
+                    <p id="product35-info"><strong>Allen Solly</strong><br>Men's Regular Fit T-shirt</p>
+                </div>
+                <div class="product-rating-div">
+                    <img src="images/rating-4.png"><span>401</span>
+                </div>
+                <div class="product-cost-div">
+                    ₹<p id="product35-cost" value="549">549</p>
+                </div>
+                <div class="product-color-div">
+                    <p>Color: <strong><span id="product35-color-text">Navy Blue</span></strong></p>
+                    <button onclick="const chart_title = 'Allen Solly Tshirt';
+                    OpenPopUp1(chart_title)">Size Chart</button>
+                </div>
+                <div class="select-option-div">
+                    <label>Size:</label>
+                    <select class="select-option" id="product35-size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                <div class="label-quantity">
+                    <label class="label2">Quantity: </label>
+                    <select id="product35-quantity" class="select-option">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                </div>
+                <div class="product-options-div product-option-type3">
+                    <div class="product-option-div">
+                        <button class="product35-option1"
+                        onclick="ProductChange('product35-img', 'images-2/product35-1.jpg', 'product35-color-text', 'Navy Blue')"
+                        ></button>
+                        <button class="product35-option2"
+                        onclick="ProductChange('product35-img', 'images-2/product35-2.jpg', 'product35-color-text', 'Black')"
+                        ></button>
+                        <button class="product35-option3"
+                        onclick="ProductChange('product35-img', 'images-2/product35-3.jpg', 'product35-color-text', 'Olive')"
+                        ></button>
+                    </div>
+                </div>
+                <div class="product-checkmark-div">
+                    <img class="checkmark" id="checkmark35" src=""><span id="added-text35"></span>
+                </div>
+                <div class="product-addcart-button">
+                    <button onclick="Product_Add_to_Cart('checkmark35','added-text35', 'product35-quantity')
+                    Add_Product_Details_to_Cart('product35-img', 'product35-info', 'product35-cost', 'product35-color-text', 'product35-size')"
+                    >Add to  Cart</button>
+                </div>
+        </div>
+
+    <!---Product 36-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product36-img" src="images-2/product36.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product36-info"><strong>Butterfly</strong><br>1L Electric Kettle, Stainless Steel, For Boil Water, Tea, Coffee</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>1,373</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product36-cost" value="445">445</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product36-color-text">Silver</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product36-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark36" src=""><span id="added-text36"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark36','added-text36', 'product36-quantity')
+                Add_Product_Details_to_Cart('product36-img', 'product36-info', 'product36-cost', 'product36-color-text', null, 'product36-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 37-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product37-img" src="images-2/product37.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product37-info"><strong>Vega</strong><br>Round Hair Comb | Brush | Unisex | For All Hair Types</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>31,388</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product37-cost" value="181">181</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product37-color-text">Wooden Color</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product37-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark37" src=""><span id="added-text37"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark37','added-text37', 'product37-quantity')
+                Add_Product_Details_to_Cart('product37-img', 'product37-info', 'product37-cost', 'product37-color-text', null, 'product37-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 38-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product38-img" src="images-2/product38.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product38-info"><strong>Clara</strong><br>92.5 Sterling Silver White Gold Plated Chain Necklace</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>1,588</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product38-cost" value="1181">1181</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product38-color-text">Silver</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product38-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark38" src=""><span id="added-text38"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark38','added-text38', 'product38-quantity')
+                Add_Product_Details_to_Cart('product38-img', 'product38-info', 'product38-cost', 'product38-color-text', null, 'product38-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 39-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product39-img" src="images-2/product39-1.jpg">
+                <img class="bestseller-logo" src="images/Best-Seller-logo.png">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product39-info"><strong>Allen Solly</strong><br>Men's Cotton Crew Neck Sweartshirt</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>23,690</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product39-cost" value="599">599</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product39-color-text">Black</span></strong></p>
+                <button onclick="const chart_title = 'Allen Solly Tshirt';
+                OpenPopUp1(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product39-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product39-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product39-option1"
+                    onclick="ProductChange('product39-img', 'images-2/product39-1.jpg', 'product39-color-text', 'Black')"
+                    ></button>
+                    <button class="product39-option2"
+                    onclick="ProductChange('product39-img', 'images-2/product39-2.jpg', 'product39-color-text', 'Orange')"
+                    ></button>
+                    <button class="product39-option3"
+                    onclick="ProductChange('product39-img', 'images-2/product39-3.jpg', 'product39-color-text', 'Maroon')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark39" src=""><span id="added-text39"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark39','added-text39', 'product39-quantity')
+                Add_Product_Details_to_Cart('product39-img', 'product39-info', 'product39-cost', 'product39-color-text', 'product39-size', 'product39-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 40-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product40-img" src="images-2/product40.jpg">
+                <img class="amazonchoice-logo" src="images/Amazon-choice.webp">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product40-info"><strong>NutriPro</strong><br>Juicer Mixer Grinder - Smoothie Maker - 500 Watts(3 Jars 2 Blades)</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>18,378</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product40-cost" value="1299">1299</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product40-color-text">Silver</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product40-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark40" src=""><span id="added-text40"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark40','added-text40', 'product40-quantity')
+                Add_Product_Details_to_Cart('product40-img', 'product40-info', 'product40-cost', 'product40-color-text', null, 'product40-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 41-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product41-img" src="images-2/product41-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product41-info"><strong>Amazon Brand - Symbol</strong><br>Men's Cotton Full Sleeves Sweartshirt</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>236</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product41-cost" value="429">429</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product41-color-text">Green</span></strong></p>
+                <button onclick="const chart_title = 'Amazon Brand Sweartshirt';
+                OpenPopUp1(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label>Size:</label>
+                <select class="select-option" id="product41-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product41-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product41-option1"
+                    onclick="ProductChange('product41-img', 'images-2/product41-1.jpg', 'product41-color-text', 'Green')"
+                    ></button>
+                    <button class="product41-option2"
+                    onclick="ProductChange('product41-img', 'images-2/product41-2.jpg', 'product41-color-text', 'Teal Blue')"
+                    ></button>
+                    <button class="product41-option3"
+                    onclick="ProductChange('product41-img', 'images-2/product41-3.jpg', 'product41-color-text', 'Navy Blue')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark41" src=""><span id="added-text41"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark41','added-text41', 'product41-quantity')
+                Add_Product_Details_to_Cart('product41-img', 'product41-info', 'product41-cost', 'product41-color-text', 'product41-size', 'product41-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 42-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product42-img" src="images-2/product42.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product42-info"><strong>Desidiya</strong><br>3D 7 Changing Color Moon Light Rechargeable Night lamp</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>9,777</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product42-cost" value="549">549</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product42-color-text">Moon Lamp</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product42-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark42" src=""><span id="added-text42"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark42','added-text42', 'product42-quantity')
+                Add_Product_Details_to_Cart('product42-img', 'product42-info', 'product42-cost', 'product42-color-text', null, 'product42-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 43-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product43-img" src="images-2/product43.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product43-info"><strong>JZENEME</strong><br>Rhodium Plated Silver Necklace with Earring Jewellery Set</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>378</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product43-cost" value="589">589</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product43-color-text">Silver</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product43-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark43" src=""><span id="added-text43"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark43','added-text43', 'product43-quantity')
+                Add_Product_Details_to_Cart('product43-img', 'product43-info', 'product43-cost', 'product43-color-text', null, 'product43-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 44-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product44-img" src="images-2/product44-1.jpg">
+                <img class="amazonchoice-logo" src="images/Amazon-choice.webp">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product44-info"><strong>NSSIW</strong><br>Sunglass for Men and Women, with Metal Frame and UV Protection</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.5.png"><span>628</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product44-cost" value="829">829</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product44-color-text">Grey</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product44-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type4">
+                <button
+                onclick="ProductChange('product44-img', 'images-2/product44-1.jpg', 'product44-color-text', 'Grey')"
+                ><img src="images-2/product44-1.jpg"></button>
+                <button
+                onclick="ProductChange('product44-img', 'images-2/product44-2.jpg', 'product44-color-text', 'Gold')"
+                ><img src="images-2/product44-2.jpg"></button>
+                <button
+                onclick="ProductChange('product44-img', 'images-2/product44-3.jpg', 'product44-color-text', 'Black')"
+                ><img src="images-2/product44-3.jpg"></button>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark44" src=""><span id="added-text44"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark44','added-text44', 'product44-quantity')
+                Add_Product_Details_to_Cart('product44-img', 'product44-info', 'product44-cost', 'product44-color-text', null, 'product44-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 45-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product45-img" src="images-2/product45.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product45-info"><strong>Philips</strong><br>HL7756/00 Mixer Grinder 750 Watt, 3 Stainless Steel Jars with 3 Speed Control</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>29,678</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product45-cost" value="2499">2499</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product45-color-text">Black</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product45-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark45" src=""><span id="added-text45"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark45','added-text45', 'product45-quantity')
+                Add_Product_Details_to_Cart('product45-img', 'product45-info', 'product45-cost', 'product45-color-text', null, 'product45-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 46-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product46-img" src="images-2/product46.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product46-info"><strong>Crocs</strong><br>Unisex-adult LiteRide Clog Black/Slate Grey Clog (M8W10) (206708-0DD)</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>798</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product46-cost" value="2499">2999</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product46-color-text">Grey</span></strong></p>
+            </div>
+            <div class="select-option-div">
+                <label class="label1">Size:</label>
+                <select class="select-option" id="product46-size">
+                    <option value="6 UK">6 UK</option>
+                    <option value="7 UK">7 UK</option>
+                    <option value="8 UK">8 UK</option>
+                    <option value="9 UK">9 UK</option>
+                    <option value="10 UK">10 UK</option>
+                    <option value="11 UK">11 UK</option>
+                    <option value="12 UK">12 UK</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product46-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark46" src=""><span id="added-text46"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark46','added-text46', 'product46-quantity')
+                Add_Product_Details_to_Cart('product46-img', 'product46-info', 'product46-cost', 'product46-color-text', 'product46-size', 'product46-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>  
+        
+    <!---Product 47-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product47-img" src="images-2/product47-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product47-info"><strong>SHIVANAA</strong><br>SHIVANAA Women's Jacquard Saree||Trendy Festive Wedding Saree For Women</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>230</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product47-cost" value="749">749</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product47-color-text">Teal Blue</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product47-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <div class="product-option-div">
+                    <button class="product47-option1"
+                    onclick="ProductChange('product47-img', 'images-2/product47-1.jpg', 'product47-color-text', 'Teal Blue')"
+                    ></button>
+                    <button class="product47-option2"
+                    onclick="ProductChange('product47-img', 'images-2/product47-2.jpg', 'product47-color-text', 'Burgundy')"
+                    ></button>
+                    <button class="product47-option3"
+                    onclick="ProductChange('product47-img', 'images-2/product47-3.jpg', 'product47-color-text', 'Pink')"
+                    ></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark47" src=""><span id="added-text47"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark47','added-text47', 'product47-quantity')
+                Add_Product_Details_to_Cart('product47-img', 'product47-info', 'product47-cost', 'product47-color-text', null, 'product47-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 48-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product48-img" src="images-2/product48-1.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product48-info"><strong>Ladies Hub</strong><br>Kolhapuri Women Stylish Ethnic Flat Sandals</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>191</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product48-cost" value="499">499</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product48-color-text">Blue</span></strong></p>
+                <button onclick="const chart_title = 'Ladies Hub';
+                OpenPopUp3(chart_title)">Size Chart</button>
+            </div>
+            <div class="select-option-div">
+                <label class="label1">Size:</label>
+                <select class="select-option" id="product48-size">
+                    <option value="5 UK">5 UK</option>
+                    <option value="6 UK">6 UK</option>
+                    <option value="7 UK">7 UK</option>
+                    <option value="8 UK">8 UK</option>
+                    <option value="9 UK">9 UK</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product48-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type4">
+                <div class="product-option-div">
+                    <button class="product48-option1"
+                    onclick="ProductChange('product48-img', 'images-2/product48-1.jpg', 'product48-color-text', 'Blue')"
+                    ><img src="images-2/product48-1.jpg"></button>
+                    <button class="product48-option2"
+                    onclick="ProductChange('product48-img', 'images-2/product48-2.jpg', 'product48-color-text', 'Tan')"
+                    ><img src="images-2/product48-2.jpg"></button>
+                </div>
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark48" src=""><span id="added-text48"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark48','added-text48', 'product48-quantity')
+                Add_Product_Details_to_Cart('product48-img', 'product48-info', 'product48-cost', 'product48-color-text', 'product48-size', 'product48-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 49-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product49-img" src="images-2/product49.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product49-info"><strong>Hopscotch</strong><br>Boys Cotton Text Print Top And Jogger Set in Grey Color</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>88</span>
+            </div>
+            <div class="product-cost-div">
+                <p>₹ <span id="product49-cost" value="558">558</span></p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product49-color-text">Grey</span></strong></p>
+            </div>
+            <div class="select-option-div">
+            <div class="label-quantity label-quantity-type2">
+                <label class="label2">Quantity: </label>
+                <select id="product49-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark49" src=""><span id="added-text49"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark49','added-text49', 'product49-quantity')
+                Add_Product_Details_to_Cart('product49-img', 'product49-info', 'product49-cost', 'product49-color-text', null, 'product49-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+    <!---Product 50-->
+
+        <div class="home-inner-grid-div">
+            <div class="product-img-div">
+                <img class="product-img" id="product50-img" src="images-2/product50.jpg">
+            </div>
+            
+            <div class="product-info-div">
+                <p id="product50-info"><strong>Naughty Ninos</strong><br>Naughty Ninos Girls Knee Length Dress</p>
+            </div>
+            <div class="product-rating-div">
+                <img src="images/rating-4.png"><span>2,478</span>
+            </div>
+            <div class="product-cost-div">
+                ₹<p id="product50-cost" value="569">569</p>
+            </div>
+            <div class="product-color-div">
+                <p>Color: <strong><span id="product50-color-text">Navy Blue</span></strong></p>
+            </div>
+            <div class="select-option-div">
+                <label class="label2">Size: </label>
+                <select class="select-option select-option2" id="product50-size">
+                    <option value="5-6 years">5-6 years</option>
+                    <option value="7-8 years">7-8 years</option>
+                    <option value="9-10 years">9-10 years</option>
+                </select>
+            <div class="label-quantity">
+                <label class="label2">Quantity: </label>
+                <select id="product50-quantity" class="select-option">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            </div>
+            <div class="product-options-div product-option-type3">
+                <!---Product had No Options-->
+            </div>
+            <div class="product-checkmark-div">
+                <img class="checkmark" id="checkmark50" src=""><span id="added-text50"></span>
+            </div>
+            <div class="product-addcart-button">
+                <button onclick="Product_Add_to_Cart('checkmark50','added-text50', 'product50-quantity')
+                Add_Product_Details_to_Cart('product50-img', 'product50-info', 'product50-cost', 'product50-color-text', 'product50-size', 'product50-quantity')"
+                >Add to  Cart</button>
+            </div>
+        </div>
+
+</div>
+
+
+<div class="Bottom-div">
+    <div class="back-to-top-div">
+        <a href="#"><button class="backtotop-button">Back to Top</button></a>
+    </div>
+    <div class="logo-div">
+        <button><a href="#"><img src="images/amazon-logo.png"></a></button>
+    </div>
+</div>
+
+<script src="script/index-amazon.js"></script>
+<script src="script/amazon-cart.js"></script>
+
+</body>
+</html>

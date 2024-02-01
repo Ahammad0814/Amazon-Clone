@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkout</title>
+        <link rel="icon" href="images/A-logo.png">
+        <link rel="stylesheet" href="styles/amazon-cart.css">
+    </head>
+<body>
+
+<div class="Cart-head-container">
+    <div class="cart-amazon-logo-div">
+        <a href="index.html"><img class="amazon-logo-cart" src="images/amazon-logo-black.png"></a>
+    </div>
+    <div class="checkout-items-div">
+        <p>Checkout(<span class="total-items">0</span> Items)</p>
+    </div>
+</div>
+
+<div class="review-text-div">
+    <p class="review-text">Review your Order</p>
+</div>
+
+
+<div class="product-info-container">
+
+    <div class="payment-details-div">
+        <div class="alert-img-div">
+            <img class="eligible-order-logo" src="images/alert-img.png">
+        </div>
+        <div class="alert-text-div">
+            <span class="free-order-eligible-text">Add ₹<span class="free-order-eligible-cost">0</span> of eligible items to your order to qualify for FREE Delivery</span>
+        </div>
+        <p class="summary-text">Order Summary</p>
+        
+        <div class="text-div-summary">
+            <span class="text1">Items :</span>
+            <span class="text2">₹<span class="payment_price1">0</span>.00</span>
+        </div>
+        <div class="text-div-summary">
+            <span class="text1 text3">Delivery :</span>
+            <span class="text2 text3">₹<span class="delivery_charge">0</span>.00</span>
+        </div>
+        <hr>
+        <div class="total-cost-div">
+            <span>Order Total:</span>
+            <span>₹<span class="payment_price2">0</span>.00</span>
+        </div>
+        <hr>
+        <button class="place-order-button" onclick="Update_Cart_to_Orders()">Place your Order</button>
+    </div>
+
+    <div class="order-detail-container">
+        
+    </div>
+
+</div>
+
+<div class="cart-empty-div">
+    <p>Your Cart is empty</p>
+    <a href="index.html"><button>View Products</button></a>
+</div>
+
+<script src="script/index-amazon.js"></script>
+<script src="script/amazon-cart.js"></script>
+<script src="script/amazon-orders.js"></script>
+</body>
+</html>

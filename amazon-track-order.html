@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="images/A-logo.png">
+    <link rel="stylesheet" href="styles/index-amazon-header.css">
+    <link rel="stylesheet" href="styles/amazon-track-order.css">
+</head>
+<body>
+
+<div class="header-flex">
+
+    <div class="header-left-div">
+        <a href="index.html"><button class="amazon-logo-btn"><img class="amazon-img" src="images/amazon-logo.png"></button></a>
+    </div>
+
+    <div class="header-input-div">
+        <input class="input-textbox" placeholder="Amazon Search" id="searchInput" onkeydown="if (event.key === 'Enter') { searchProducts(); }">
+        <button class="search-btn" onclick="searchProducts()">
+            <img class="search-img" src="images/search-icon.png"></button>
+    </div>
+
+    <div class="header-right-div">
+        <a href="amazon-orders.html" class="text-tag"><p class="return-txt">Returns</p><p class="order-txt">& Orders</p></a>
+        <a class="cart-a-tag" href="amazon-cart.html"><button class="cart-btn"><img class="cart-img" src="images/cart-icon.png"></a>
+            <div class="cart-txt">Cart</div>
+            <div class="cart-count">0</div>
+        </button>
+    </div>
+
+</div>
+
+<div class="orders-track-container">
+</div>
+
+<script src="script/amazon-cart.js"></script>
+<script src="script/index-amazon.js"></script>
+<script src="script/amazon-orders.js"></script>
+<script src="script/amazon-track-order.js"></script>
+</body>
+</html>

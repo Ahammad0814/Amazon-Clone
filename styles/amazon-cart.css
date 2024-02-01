@@ -1,0 +1,757 @@
+body{
+    font-family: Arial;
+}
+button, img, select{
+    cursor: pointer;
+}
+.Cart-head-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: solid 1px lightgrey;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cart-amazon-logo-div{
+    width: 42%;
+    display: flex;
+    align-items: center;
+}
+.checkout-items-div{
+    flex: 1;
+}
+.checkout-items-div p{
+    font-weight: bold;
+}
+.checkout-items-div span{
+    color: #007185;
+}
+
+/*---Product---*/
+
+.product-info-container{
+    justify-content: center;
+    height: 270px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.order-detail-container{
+    width: 800px;
+    margin-right: 20px;
+}
+.product-container{
+    padding-top: 50px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    position: relative;
+}
+.delivery-date{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #007600;
+    display: block;
+    position: absolute;
+    top: 0px;
+}
+.product-img{
+    width: 100px;
+}
+.product-info{
+    line-height: 1.3;
+    font-size: 16.5px;
+    padding-left: 20px;
+    font-weight: bold;
+    width: 350px;
+    height: 70px;
+    margin-right: 60px;
+}
+.product-price-details{
+    line-height: 0;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #B12704;
+    margin: 20px 0px 20px;
+}
+.product-quantity-details{
+   margin-left: 20px;
+   margin-right: 3px;
+}
+.product-delete-btn,
+.product-update-btn{
+    margin-left: 3px;
+    margin-right: 3px;
+    border: none;
+    color:#007185;
+    background-color: transparent;
+}
+.product-delete-btn:hover,
+.product-update-btn:hover{
+text-decoration: underline;
+}
+.line{
+    color: lightgrey;
+}
+.choose-delivery-date{
+    line-height: 0;
+    font-weight: bold;
+}
+
+#radiobtn1,
+#radiobtn2,
+#radiobtn3{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+.shipping-day{
+    font-weight: bold;
+    color: #007600;
+    line-height: 8px;
+}
+.shipping-type{
+    color: gray;
+    margin-top: 0px;
+    margin-left: 40px;
+}
+.delivery-options-div{
+    position: relative;
+    right: 30px;
+    top: 60px;
+}
+.delivery-option-form{
+    position: absolute;
+    width: 250px;
+    line-height: 0;
+}
+
+
+/*---Payment Class---*/
+
+.payment-details-div{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 300px;
+    height: 270px;
+    padding: 10px 10px 10px;
+    position: relative;
+}
+.eligible-order-logo{
+    width: 15px;
+    padding-top: 0;
+    position: absolute;
+    top: 13px;
+}
+.free-order-eligible-cost{
+    color: #B12704;
+    font-size: 13px;
+}
+.alert-img-div{
+    display: inline-block;
+    margin-left: 10px;
+}
+.alert-text-div{
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    margin-left: 10px;
+}
+.free-eligible-text{
+    color: #007600;
+    font-weight: bold;
+    font-size: 18px;
+}
+.summary-text{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text-div-summary{
+    margin: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 10px;
+}
+.total-cost-div{
+    font-weight: bold;
+    color: #B12704;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.place-order-button{
+    margin: 10px 0px 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 210, 50);
+}
+.place-order-button:hover{
+    background-color: rgb(255, 200, 0)
+}
+.cart-empty-div{
+    position: absolute;
+    left: 150px;
+    visibility: hidden;
+}
+.cart-empty-div-visible{
+    visibility: visible;
+}
+
+.cart-empty-div{
+    font-size: 20px;
+}
+.cart-empty-div button{
+    width: 170px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(255, 210, 50);
+}
+.cart-empty-div button:hover{
+    background-color: rgb(255, 200, 0);
+}
+
+.Qty-input-box{
+    width: 40px;
+    margin-right: -40px;
+    position: absolute;
+    left: 85px;
+    width: 35px;
+    visibility: hidden;
+ }
+ .cart-update-btn{
+    border: none;
+    background-color: rgb(255, 210, 50);
+    border-radius: 3px;
+    height: 20px;
+    margin-left: 35px;
+ }
+ .cart-qty-update-btn{
+    position: absolute;
+    bottom: 52.50px;
+    left: 135px;
+    width: 45px;
+    height: 21px;
+    font-size: 11px;
+    border: solid 1px rgb(255, 210, 50);
+    background-color: rgb(255, 210, 50);
+    border-radius: 3px;
+    visibility: hidden;
+ }
+ .cart-qty-update-btn:hover{
+    background-color: rgb(255, 200, 0);
+ }
+ .product-visible{
+    visibility: visible;
+ }
+ .product-hidden{
+    visibility: hidden;
+ }
+
+
+
+@media (min-width: 280px) {
+    .Cart-head-container{
+        height: 20px;
+    }
+    .amazon-logo-cart {
+        width: 40px;
+        margin-left: 30px;
+    }
+    .checkout-items-div p{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .review-text-div{
+        margin-top: 35px;
+        margin-left: 60px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+    .product-info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+    }
+    .inner-product-info-container{
+        position: relative;
+    }
+    .payment-details-div{
+        width: 150px;
+        height: 45px;
+        font-size: 5px;
+        padding-bottom: 100px;
+    }
+    .payment-datails-empty{
+        opacity: 0.8;
+    }
+    .free-order-eligible-text{
+        font-size: 6px;
+    }
+    .alert-text-div{
+        width: 130px;
+        height: 20px;
+        margin-left: 30px;
+    }
+    .summary-text{
+        font-size: 11px;
+        margin-left: 0px;
+    }
+    .total-cost-div{
+        font-size: 10px;
+    }
+    .place-order-button{
+        height: 15px;
+        font-size: 7px;
+    }
+
+    .order-detail-container{
+        width: 320px;
+    }
+    .product-container{
+        height: 120px;
+    }
+    .product-img{
+        width: 50px;
+    }
+    .product-info{
+        font-size: 6.5px;
+        width: 130px;
+        line-height: 1;
+    }
+    .delivery-option-form{
+        font-size: 7px;
+        margin-top: -80px;
+        margin-left: -30px;
+    }
+    #radiobtn1,
+    #radiobtn2,
+    #radiobtn3{
+        width: 8px;
+        height: 8px;
+        margin-bottom: 10px;
+    }
+    .delivery-date{
+        margin-top: 4px;
+        font-size: 8px;
+    }
+    .product-price-details{
+        font-size: 8px;
+        margin-top: -30px;
+    }
+    .product-quantity-details{
+        font-size: 8px;
+     }
+    .qty-label{
+        font-size: 8px;
+    }
+    .line{
+        font-size: 8px;
+    }
+     .product-update-btn,
+     .product-delete-btn{
+        font-size: 5px;
+     }
+     .qty-label{
+        margin-left: 18px;
+        margin-right: 15px;
+     }
+     .cart-empty-div{
+        font-size: 8px;
+        margin-top: -180px;
+        margin-left: -80px;
+     }
+     .cart-empty-div button{
+        width: 50px;
+        font-size: 5px;
+        height: 13px;
+        border-radius: 3px;
+    }
+}
+
+@media (min-width: 576px) {
+    .Cart-head-container{
+        height: 40px;
+    }
+    .amazon-logo-cart {
+        width: 50px;
+        margin-left: 100px;
+    }
+    .checkout-items-div p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .review-text-div{
+        margin-top: 70px;
+        margin-left: 140px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .product-info-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 320px;
+    }
+    .payment-details-div{
+        width: 250px;
+        height: 100px;
+        font-size: 13px;
+        margin-left: 100px;
+    }
+    .free-order-eligible-text{
+        font-size: 10px;
+    }
+    .alert-text-div{
+        width: 200px;
+        height: 20px;
+    }
+    .summary-text{
+        font-size: 13px;
+        margin-left: 0px;
+    }
+    .total-cost-div{
+        font-size: 13px;
+    }
+    .place-order-button{
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .product-info-container{
+        height: 80px;
+    }
+    .order-detail-container{
+        width: 530px;
+    }
+    .product-container{
+        height: 170px;
+    }
+    .product-img{
+        width: 80px;
+    }
+    .product-info{
+        font-size: 11.5px;
+        width: 250px;
+    }
+    .delivery-option-form{
+        font-size: 10px;
+        margin-top: -80px;
+    }
+    #radiobtn1,
+    #radiobtn2,
+    #radiobtn3{
+        width: 10px;
+        height: 10px;
+    }
+    .delivery-date{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .product-price-details{
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .product-quantity-details{
+        font-size: 12px;
+     }
+     .qty-label{
+        font-size: 12px;
+     }
+     .product-delete-btn,
+     .product-update-btn{
+        font-size: 12px;
+     }
+     .product-cost{
+        font-size: 16px;
+     }
+     .cart-empty-div{
+        font-size: small;
+        margin-top: -120px;
+     }
+     .cart-empty-div button{
+        width: 80px;
+        font-size: 8px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Cart-head-container{
+        height: 50px;
+    }
+    .amazon-logo-cart {
+        width: 60px;
+        margin-left: 150px;
+    }
+    .checkout-items-div p{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    .review-text-div{
+        margin-top: 70px;
+        margin-left: 140px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .product-info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:380px;
+    }
+    .payment-details-div{
+        width: 270px;
+        height: 125px;
+        font-size: 13px;
+    }
+    .free-order-eligible-text{
+        font-size: 10px;
+    }
+    .alert-text-div{
+        width: 227px;
+        height: 22px;
+    }
+    .summary-text{
+        font-size: 15px;
+    }
+    .total-cost-div{
+        font-size: 15px;
+    }
+    .place-order-button{
+        height: 30px;
+    }
+
+    .product-info-container{
+        height: 10px;
+    }
+    .order-detail-container{
+        width: 700px;
+    }
+    .product-container{
+        height: 180px;
+    }
+    .product-img{
+        width: 80px;
+    }
+    .product-info{
+        font-size: 16.5px;
+        width: 300px;
+    }
+    .delivery-option-form{
+        font-size: 15px;
+    }
+    #radiobtn1,
+    #radiobtn2,
+    #radiobtn3{
+        width: 14px;
+        height: 14px;
+    }
+    .delivery-date{
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .product-price-details{
+        font-size: 12px;
+    }
+    .product-quantity-details{
+        font-size: 12px;
+     }
+     .product-delete-btn,
+     .product-update-btn{
+        font-size: 12px;
+     }
+     .product-cost{
+        font-size: 16px;
+     }
+     .cart-empty-div{
+        margin-top: -100px;
+        font-size: small;
+    }
+    .cart-empty-div button{
+        width: 100px;
+        font-size: 10px;
+        height: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .Cart-head-container{
+        height: 60px;
+    }
+    .amazon-logo-cart {
+        width: 100px;
+        margin-left: 150px;
+    }
+    .checkout-items-div p{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .review-text-div{
+        margin-top: 80px;
+        margin-left: 140px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .product-info-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 430px;
+        padding-top: 0px;
+    }
+    .payment-details-div{
+        width: 300px;
+        height: 160px;
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    .free-order-eligible-text{
+        font-size: 13px;
+    }
+    .alert-text-div{
+        width: 250px;
+        height: 25px;
+    }
+    .summary-text{
+        font-size: 16px;
+    }
+    .total-cost-div{
+        font-size: 18px;
+    }
+    .place-order-button{
+        height: 40px;
+    }
+
+    .order-detail-container{
+        width: 800px;
+    }
+    .product-container{
+        height: 200px;
+    }
+    .product-img{
+        width: 120px;
+    }
+    .product-info{
+        font-size: 17.5px;
+        width: 300px;
+    }
+    .delivery-option-form{
+        font-size: 17px;
+    }
+    #radiobtn1,
+    #radiobtn2,
+    #radiobtn3{
+        width: 15px;
+        height: 15px;
+        margin-bottom: 15px;
+    }
+    .delivery-date{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .product-price-details{
+        font-size: 20px;
+    }
+    .product-quantity-details{
+        font-size: 16px;
+     }
+     .product-delete-btn,
+     .product-update-btn{
+        font-size: 16px;
+     }
+     .product-cost{
+        font-size: 18px;
+     }
+   .cart-empty-div{
+        margin-top: -120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Cart-head-container{
+        height: 80px;
+    }
+    .amazon-logo-cart {
+        width: 100px;
+        margin-left: 150px;
+    }
+    .checkout-items-div p{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .review-text-div{
+        margin-top: 120px;
+        margin-left: 140px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .product-info-container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: normal;
+        margin-top: 0px;
+    }
+    .product-img{
+        width: 120px;
+    }
+    .product-info{
+        font-size: 16.5px;
+        width: 350px;
+        margin-right: 120px;
+        line-height: 1.1;
+    }
+    .delivery-option-form{
+        font-size: 16px;
+    }
+    #radiobtn1,
+    #radiobtn2,
+    #radiobtn3{
+        width: 18px;
+        height: 18px;
+        margin-bottom: 15px;
+    }
+    .delivery-date{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .product-cost{
+        font-size: 20px;
+    }
+    .product-quantity-details{
+        font-size: 15px;
+     }
+     .product-delete-btn,
+     .product-update-btn{
+        font-size: 15px;
+     }
+     .alert-text-div{
+        width: 250px;
+        margin-left: 15px;
+    }
+    .cart-empty-div{
+        font-size: 25px;
+        margin-top: 0px;
+        margin-left: 0px;
+     }
+     .cart-empty-div button{
+        font-size: 15px;
+        width: 170px;
+        height: 30px;
+        border-radius: 8px;
+    }
+}
