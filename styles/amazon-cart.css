@@ -383,6 +383,9 @@ text-decoration: underline;
         height: 13px;
         border-radius: 3px;
     }
+    .cart-qty-update-btn{
+        bottom: 35px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -679,6 +682,9 @@ text-decoration: underline;
      }
    .cart-empty-div{
         margin-top: -120px;
+    }
+    .cart-qty-update-btn{
+        bottom: 56px;
     }
 }
 
