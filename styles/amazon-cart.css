@@ -36,10 +36,12 @@ button, img, select{
 
 .product-info-container{
     justify-content: center;
-    height: 270px;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: start;
+    align-items: start;
 }
 .order-detail-container{
     width: 800px;
@@ -243,7 +245,7 @@ text-decoration: underline;
  }
  .cart-qty-update-btn{
     position: absolute;
-    bottom: 52.50px;
+    bottom: 56.50px;
     left: 135px;
     width: 45px;
     height: 21px;
@@ -287,7 +289,7 @@ text-decoration: underline;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 500px;
+        margin-top: 0px;
     }
     .inner-product-info-container{
         position: relative;
@@ -409,7 +411,7 @@ text-decoration: underline;
     .product-info-container{
         display: flex;
         flex-direction: column;
-        margin-top: 620px;
+        margin-top: 0px;
     }
     .payment-details-div{
         width: 250px;
@@ -516,7 +518,7 @@ text-decoration: underline;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top:1250px;
+        margin-top: 0px;
     }
     .payment-details-div{
         width: 270px;
@@ -579,6 +581,7 @@ text-decoration: underline;
      .product-update-btn{
         font-size: 12px;
      }
+
      .product-cost{
         font-size: 16px;
      }
